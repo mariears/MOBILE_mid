@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="236dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Masukkan Angka"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="234dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:hint="Masukkan Angka"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="109dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonTambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKurang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kurang" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kali" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bagi" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="176dp"
+        android:text="Hasil :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextHasil"
+        android:layout_width="228dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="192dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Hasil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="168dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="652dp"
+        android:text="Clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
